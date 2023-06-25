@@ -1,0 +1,58 @@
+.navbar {
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: dodgerblue;
+  transform: scale(1.1);
+}
+
+.active-link {
+  color: dodgerblue !important;
+  transform: scale(1.1);
+}
+
+#NavTitle {
+  text-align: center;
+  font-size: 35px;
+  background-image: linear-gradient(to right, #f3f3f3, #f8f8f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 480px) {
+  .logo{
+    display: none;
+  }
+}
